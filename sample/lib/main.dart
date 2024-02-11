@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sample/change_password.dart';
+import 'package:sample/home.dart';
 void main()=>runApp(MaterialApp(
   home: Home(),debugShowCheckedModeBanner: false,
 ));
@@ -91,7 +92,9 @@ class Home extends StatelessWidget {
                  fontStyle: FontStyle.normal),
           ),
           
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>homepage()));
+          },
           
         ),
         
