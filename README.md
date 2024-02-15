@@ -1,10 +1,16 @@
-select the Terminal at top of the vs-code and enter new one.
-Run the program in terminal it present at bottom of the vs-code.
-First enter "flutter run".
-Then the Terminal asking where do you want run the code.
-they showing
-   1.window
-   2.chrome
-   3.edge
-   we select one form out of 3.
-finally the code will be run in selecting option
+# sample
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
