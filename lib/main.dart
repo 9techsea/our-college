@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:sample/change_password.dart';
+import 'package:sample/change_password2.dart';
 import 'package:sample/home.dart';
+import 'package:sample/student_dashbord.dart';
 void main()=>runApp(MaterialApp(
   home: Home(),debugShowCheckedModeBanner: false,
 ));
 class Home extends StatelessWidget {
-  const Home({super.key});
+    var u=false;
+    var a=false;
 
   @override
   Widget build(BuildContext context) {
@@ -27,18 +30,34 @@ class Home extends StatelessWidget {
             height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.height,
         child:Column(children: [
-          Padding(padding:EdgeInsets.fromLTRB(0, 30, 0,0),
-         child: CircleAvatar(
+          Padding(padding:EdgeInsets.fromLTRB(50, 50, 10,0),
+          child:
+          Row(children: [
             
-         radius: 50,
-        
-          child: Icon(Icons.person,
-          size: 70,
+
+             ElevatedButton(
+              
+              style: ElevatedButton.styleFrom(
+                
+                  // text color
+                ),
+              onPressed: (){
+                Color:Colors.green;
+                a=true;
+             }, child:
+             
+          Text('admin')
           ),
-        ),
-        ),
+          SizedBox(width: 20,),
+          ElevatedButton(onPressed: (){
 
-
+            u=true;
+          }, child: 
+          Text('user')
+          ),
+          ],),
+         
+          ),
 
         Padding(
         padding: EdgeInsets.fromLTRB(30, 10, 30, 0),
@@ -93,7 +112,24 @@ class Home extends StatelessWidget {
           ),
           
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>homepage()));
+            if(a==true)
+            {
+              print("admin");
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>homepage()));
+                a=false;
+            }
+            else if(u==true)
+            {
+            
+              print('user');
+              
+                                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Sdash()));
+              u=false;
+            }
+            else{
+          
+            }
+            
           },
           
         ),

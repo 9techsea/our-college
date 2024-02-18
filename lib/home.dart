@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sample/adminstudents.dart';
+
 
 class homepage extends StatefulWidget {
   const homepage({super.key});
@@ -60,30 +62,30 @@ class _homepageState extends State<homepage> {
         
           Row(children: [
        
-            Column(children: [
-              CircleAvatar(
-               radius: 40,
-              backgroundColor: Colors.orange,
+            // Column(children: [
+            //   CircleAvatar(
+            //    radius: 40,
+            //   backgroundColor: Colors.orange,
               
-              child: Icon(Icons.currency_rupee,size: 30,),
+            //   child: Icon(Icons.currency_rupee,size: 30,),
             
               
             
-            ),
-            Text('''   Current Payment   ''')
-            ],),
-            Column(children: [
-              CircleAvatar(
-               radius: 40,
-              backgroundColor: Colors.purple,
+            // ),
+            // Text('''   Current Payment   ''')
+            // ],),
+            // Column(children: [
+            //   CircleAvatar(
+            //    radius: 40,
+            //   backgroundColor: Colors.purple,
               
-              child: Icon(Icons.currency_rupee,size: 30,),
+            //   child: Icon(Icons.currency_rupee,size: 30,),
             
               
             
-            ),
-            Text('''   Expenditure   ''')
-            ],),
+            // ),
+            // Text('''   Expenditure   ''')
+            // ],),
          
             Column(children: [
               CircleAvatar(
@@ -98,22 +100,28 @@ class _homepageState extends State<homepage> {
             Text('''        Employess        ''')
             ],),
             
-          ],),
-          SizedBox(height: 20,),
-           Row(children: [
-       
-            Column(children: [
+         
+        
+          
+      
+                   Column(children: [
               CircleAvatar(
+               
                radius: 40,
               backgroundColor: Colors.pinkAccent,
               
-              child: Icon(Icons.groups_3_rounded,size: 30,),
-            
-              
+             child: IconButton(icon: Icon(Icons.groups_3_rounded,size: 30,),onPressed: (){
+                 Navigator.push(context,MaterialPageRoute(builder: (context)=>admst()));
+
+             },),
+           
+        
             
             ),
-            Text('''         Students         ''')
+              Text('''    Students    '''),
             ],),
+      
+     
             Column(children: [
               CircleAvatar(
                radius: 40,
@@ -124,9 +132,11 @@ class _homepageState extends State<homepage> {
               
             
             ),
-            Text('''   Notifications   ''')
+            Text('''        Notifications        ''')
             ],),
-         
+          ],),
+          SizedBox(height:10,),
+          Row(children: [
             Column(children: [
               CircleAvatar(
                radius: 40,
@@ -137,12 +147,13 @@ class _homepageState extends State<homepage> {
               
             
             ),
+
             Text('''        Attendance        ''')
             ],),
             
-          ],),
-          SizedBox(height: 20,),
-           Row(children: [
+          
+        
+          
        
             Column(children: [
               CircleAvatar(
@@ -154,7 +165,7 @@ class _homepageState extends State<homepage> {
               
             
             ),
-            Text('''          Holidays          ''')
+            Text('''   Holidays   ''')
             ],),
             Column(children: [
               CircleAvatar(
@@ -166,24 +177,24 @@ class _homepageState extends State<homepage> {
               
             
             ),
-            Text(''' Events/Gallery ''')
+            Text('''        Events/Gallery        ''')
             ],),
-         
-            Column(children: [
-              CircleAvatar(
-               radius: 40,
-              backgroundColor: Colors.lightGreenAccent,
-              
-              child: Icon(Icons.inventory,size: 30,),
-            
-              
-            
-            ),
-            Text('''          inventory          ''')
-            ],),
-            
           ],),
-          SizedBox(height: 20,),
+            // Column(children: [
+            //   CircleAvatar(
+            //    radius: 40,
+            //   backgroundColor: Colors.lightGreenAccent,
+              
+            //   child: Icon(Icons.inventory,size: 30,),
+            
+              
+            
+            // ),
+            // Text('''          inventory          ''')
+            // ],),
+            
+        
+            SizedBox(height: 10,),
            Row(children: [
        
             Column(children: [
@@ -192,8 +203,6 @@ class _homepageState extends State<homepage> {
               backgroundColor: Colors.blueGrey,
               
               child: Icon(Icons.settings,size: 30,),
-            
-              
             
             ),
             Text('''           Settings           ''')
