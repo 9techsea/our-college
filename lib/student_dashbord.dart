@@ -43,7 +43,7 @@ class _SdashState extends State<Sdash> {
             child:
                 Column(children: [
                   
-                  Text("Studnet Admin Name",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 26.0),),
+                  Text("Student Name",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 26.0),),
                  
                   Text("Designation",style: TextStyle(fontSize: 19.0),),
                 ],),

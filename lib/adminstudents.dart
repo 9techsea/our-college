@@ -11,11 +11,27 @@ class _admstState extends State<admst> {
   List k=[];
   Map<String,dynamic> student1={
     "name":"dinesh",
-    "rollno":"36"
+    "student_id":"36",
+    "Year":"3rd",
+    "Grade":"A",
+    "email":"din@gmail.com",
+    "pn":"din@gmail.com",
+    "dob":"12-23-4",
+    "gender":"male",
+    "Date":"23-09-2003"
+
+
   };
     Map<String,dynamic> student2={
-    "name":"ram",
-    "rollno":"45"
+   "name":"ram",
+    "student_id":"36",
+    "Year":"3rd",
+    "Grade":"A",
+    "email":"din@gmail.com",
+    "pn":"din@gmail.com",
+    "dob":"12-23-4",
+    "gender":"male",
+    "Date":"23-09-2003"
   };
   @override
   void initState() {
@@ -40,7 +56,7 @@ class _admstState extends State<admst> {
       DataColumn(label: Text('Date'))
     ], rows: [
       DataRow(cells: [
-        DataCell(Text('ram')),
+        DataCell(Text('$k["name"]')),
         DataCell(Text('24')),
         DataCell(Text('3rd')),
         DataCell(Text('A')),

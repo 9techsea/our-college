@@ -1,4 +1,34 @@
-2024/02/18-00:32:36.552 46b0 Reusing MANIFEST C:\Users\DINESH~1\AppData\Local\Temp\flutter_tools.94314058\flutter_tools_chrome_device.2bc4e840\Default\Local Storage\leveldb/MANIFEST-000001
-2024/02/18-00:32:36.573 46b0 Recovering log #4
-2024/02/18-00:32:36.588 46b0 Reusing old log C:\Users\DINESH~1\AppData\Local\Temp\flutter_tools.94314058\flutter_tools_chrome_device.2bc4e840\Default\Local Storage\leveldb/000004.log 
-2024/02/18-00:32:36.605 46b0 Delete type=0 #3
+2024/02/18-00:44:01.504 5f44 Reusing MANIFEST C:\Users\DINESH~1\AppData\Local\Temp\flutter_tools.6cc87b6f\flutter_tools_chrome_device.d5fe461c\Default\Local Storage\leveldb/MANIFEST-000001
+2024/02/18-00:44:01.513 5f44 Recovering log #4
+2024/02/18-00:44:01.516 5f44 Reusing old log C:\Users\DINESH~1\AppData\Local\Temp\flutter_tools.6cc87b6f\flutter_tools_chrome_device.d5fe461c\Default\Local Storage\leveldb/000004.log 
+2024/02/18-00:44:01.533 5f44 Delete type=0 #3
+2024/02/18-01:01:48.166 2668 Level-0 table #8: started
+2024/02/18-01:01:48.171 2668 Level-0 table #8: 38803 bytes OK
+2024/02/18-01:01:48.174 2668 Delete type=0 #4
+2024/02/18-01:08:48.945 2668 Level-0 table #10: started
+2024/02/18-01:08:48.948 2668 Level-0 table #10: 46596 bytes OK
+2024/02/18-01:08:48.949 2668 Delete type=0 #7
+2024/02/18-01:18:18.440 2668 Level-0 table #12: started
+2024/02/18-01:18:18.443 2668 Level-0 table #12: 44461 bytes OK
+2024/02/18-01:18:18.444 2668 Delete type=0 #9
+2024/02/18-01:19:15.273 2668 Level-0 table #14: started
+2024/02/18-01:19:15.276 2668 Level-0 table #14: 37630 bytes OK
+2024/02/18-01:19:15.278 2668 Delete type=0 #11
+2024/02/18-01:20:13.982 2668 Level-0 table #16: started
+2024/02/18-01:20:13.986 2668 Level-0 table #16: 46060 bytes OK
+2024/02/18-01:20:13.988 2668 Delete type=0 #13
+2024/02/18-01:20:13.989 2668 Compacting 4@0 + 1@1 files
+2024/02/18-01:20:13.994 2668 Generated table #17@0: 186 keys, 145181 bytes
+2024/02/18-01:20:13.994 2668 Compacted 4@0 + 1@1 files => 145181 bytes
+2024/02/18-01:20:13.995 2668 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/18-01:20:13.995 2668 Delete type=2 #8
+2024/02/18-01:20:13.995 2668 Delete type=2 #10
+2024/02/18-01:20:13.995 2668 Delete type=2 #12
+2024/02/18-01:20:13.995 2668 Delete type=2 #14
+2024/02/18-01:20:13.995 2668 Delete type=2 #16
+2024/02/18-01:46:13.161 2668 Level-0 table #19: started
+2024/02/18-01:46:13.166 2668 Level-0 table #19: 47006 bytes OK
+2024/02/18-01:46:13.171 2668 Delete type=0 #15
+2024/02/18-01:58:34.783 2668 Level-0 table #21: started
+2024/02/18-01:58:34.785 2668 Level-0 table #21: 31262 bytes OK
+2024/02/18-01:58:34.786 2668 Delete type=0 #18
