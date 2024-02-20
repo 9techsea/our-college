@@ -30,7 +30,7 @@ class _admstState extends State<admst> {
     "Year":"3rd",
     "Grade":"A",
     "email":"din@gmail.com",
-    "pn":"din@gmail.com",
+    "pn":"2342335435",
     "dob":"12-23-4",
     "gender":"male",
     "Date":"23-09-2003"
@@ -41,7 +41,7 @@ class _admstState extends State<admst> {
     "Year":"3rd",
     "Grade":"A",
     "email":"din@gmail.com",
-    "pn":"din@gmail.com",
+    "pn":"345345345",
     "dob":"12-23-4",
     "gender":"male",
     "Date":"23-09-2003"
@@ -54,7 +54,7 @@ class _admstState extends State<admst> {
     "Year":"3rd",
     "Grade":"A",
     "email":"din@gmail.com",
-    "pn":"din@gmail.com",
+    "pn":"4534536346",
     "dob":"12-23-4",
     "gender":"male",
     "Date":"23-09-2003"
@@ -67,7 +67,7 @@ class _admstState extends State<admst> {
     "Year":"3rd",
     "Grade":"A",
     "email":"din@gmail.com",
-    "pn":"din@gmail.com",
+    "pn":"345345345345",
     "dob":"12-23-4",
     "gender":"male",
     "Date":"23-09-2003"
@@ -80,7 +80,7 @@ class _admstState extends State<admst> {
     "Year":"3rd",
     "Grade":"A",
     "email":"din@gmail.com",
-    "pn":"din@gmail.com",
+    "pn":"643563456",
     "dob":"12-23-4",
     "gender":"male",
     "Date":"23-09-2003"
@@ -93,7 +93,7 @@ class _admstState extends State<admst> {
     "Year":"3rd",
     "Grade":"A",
     "email":"din@gmail.com",
-    "pn":"din@gmail.com",
+    "pn":"2467556776",
     "dob":"12-23-4",
     "gender":"male",
     "Date":"23-09-2003"
@@ -106,7 +106,7 @@ class _admstState extends State<admst> {
     "Year":"3rd",
     "Grade":"A",
     "email":"din@gmail.com",
-    "pn":"din@gmail.com",
+    "pn":"7567433544",
     "dob":"12-23-4",
     "gender":"male",
     "Date":"23-09-2003"
@@ -119,7 +119,7 @@ class _admstState extends State<admst> {
     "Year":"3rd",
     "Grade":"A",
     "email":"din@gmail.com",
-    "pn":"din@gmail.com",
+    "pn":"7686563443",
     "dob":"12-23-4",
     "gender":"male",
     "Date":"23-09-2003"
@@ -132,7 +132,7 @@ class _admstState extends State<admst> {
     "Year":"3rd",
     "Grade":"A",
     "email":"din@gmail.com",
-    "pn":"din@gmail.com",
+    "pn":"9875674543",
     "dob":"12-23-4",
     "gender":"male",
     "Date":"23-09-2003"
@@ -145,7 +145,7 @@ class _admstState extends State<admst> {
     "Year":"3rd",
     "Grade":"A",
     "email":"din@gmail.com",
-    "pn":"din@gmail.com",
+    "pn":"76978665464",
     "dob":"12-23-4",
     "gender":"male",
     "Date":"23-09-2003"
@@ -322,7 +322,179 @@ class _admstState extends State<admst> {
        });
         
        }),)),
-        DataCell(Text(student["name"] ?? " ")),
+        DataCell(ElevatedButton(child: Text(student["name"] ?? " "),onPressed: (){
+          n1.text=student["name"];
+          n2.text=student["student_id"];
+          n3.text=student["Year"];
+          n4.text=student["Grade"];
+          n5.text=student["email"];
+          n6.text=student["pn"];
+          n7.text=student["dob"];
+          n8.text=student["gender"];
+          n9.text=student["Date"];
+              showDialog(context: context, builder: (context)=>AlertDialog(actions: [
+                       CircleAvatar(
+                      radius: 40,
+                      child: Icon(Icons.man),
+                       ),
+                      DataTable(columns: [
+                        DataColumn(label: ElevatedButton(child: Text('edit details'),onPressed: (){
+                                   
+                         showDialog(context: context, builder: (context)=>
+                         AlertDialog(
+                          actions: [
+                            
+
+                              TextField(
+            controller: n1,
+              obscureText: false,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Name',
+              ),
+            ),
+           TextField(
+            controller: n2,
+              obscureText: false,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'student id',
+              ),
+            ),
+            TextField(
+            controller: n3,
+              obscureText: false,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'year/class',
+              ),
+            ),
+            TextField(
+            controller: n4,
+              obscureText: false,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Grade',
+                
+              ),
+            ),
+            TextField(
+            controller: n5,
+              obscureText: false,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Email',
+              ),
+            ),
+            TextField(
+             
+            controller: n6,
+              obscureText: false,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'phone number',
+                
+                
+              ),
+            ),
+        
+            TextField(
+            controller: n7,
+              obscureText: false,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Data of birth',
+              ),
+            ),
+            TextField(
+            controller: n8,
+              obscureText: false,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Gender',
+              ),
+            ),
+            TextField(
+            controller: n9,
+              obscureText: false,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Date',
+              ),
+            ),
+         ElevatedButton(onPressed: (){
+          setState(() {
+            student["name"]=n1.text;
+         student["student_id"]= n2.text;
+         student["Year"]= n3.text;
+          student["Grade"]=n4.text;
+         student["email"]= n5.text;
+          student["pn"]=n6.text;
+          student["dob"]=n7.text;
+         student["gender"]= n8.text;
+          student["Date"]=n9.text;
+            
+          });
+
+         }, child:Text("submit")),
+         TextButton(
+            onPressed: () => Navigator.pop(context, false),
+             // passing false
+            child: Text('Exit'),
+          ),
+                          ],
+                          
+                         )
+                         );
+        
+
+
+
+                        },)),
+
+                        
+                      DataColumn(label: Text('Details'))
+                      ],
+                       rows:
+                       
+                       [DataRow(cells:[ DataCell(Text("Name")),
+                       
+                       DataCell(Text(student["name"] ?? " ")),
+                       
+                       
+                       
+                         ]  ),
+                         DataRow(cells:[ DataCell(Text("student id")),
+                       DataCell(Text(student["student_id"] ?? " ")),
+                         ]  ),
+                          DataRow(cells:[ DataCell(Text("Year/class")),
+                       DataCell(Text(student["Year"] ?? " ")),
+                         ]  ),
+                          DataRow(cells:[ DataCell(Text("Grade")),
+                       DataCell(Text(student["Grade"] ?? " ")),
+                         ]  ),
+                          DataRow(cells:[ DataCell(Text("email")),
+                       DataCell(Text(student["email"] ?? " ")),
+                         ]  ),
+                          DataRow(cells:[ DataCell(Text("Phone number")),
+                       DataCell(Text(student["pn"] ?? " ")),
+                         ]  ),
+                          DataRow(cells:[ DataCell(Text("Data of birth")),
+                       DataCell(Text(student["dob"] ?? " ")),
+                         ]  ),
+                          DataRow(cells:[ DataCell(Text("Gender")),
+                       DataCell(Text(student["gender"] ?? " ")),
+                         ]  ),
+                          DataRow(cells:[ DataCell(Text("Date")),
+                       DataCell(Text(student["Date"] ?? " ")),
+                         ]  ),
+                        ],
+                       ),
+              
+               ],)
+               );
+        },)),
+        
         DataCell(Text(student["student_id"] ?? "")),
         DataCell(Text(student["Year"] ?? "")),
         DataCell(Text(student["Grade"] ?? "")),
