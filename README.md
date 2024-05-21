@@ -1,4 +1,4 @@
-##About the app
+## About the app
 
 The app is about student details in college website like attendance,marks etc.
 
