@@ -98,10 +98,6 @@ web
 3.2
 file:///C:/Users/Dinesh%20kumar%20reddy/AppData/Local/Pub/Cache/hosted/pub.dev/web-0.3.0/
 file:///C:/Users/Dinesh%20kumar%20reddy/AppData/Local/Pub/Cache/hosted/pub.dev/web-0.3.0/lib/
-sample
-3.2
-file:///C:/our-college/
-file:///C:/our-college/lib/
 sky_engine
 3.2
 file:///C:/src/flutter/bin/cache/pkg/sky_engine/
@@ -114,4 +110,8 @@ flutter_test
 3.2
 file:///C:/src/flutter/packages/flutter_test/
 file:///C:/src/flutter/packages/flutter_test/lib/
+sample
+3.2
+file:///D:/project_hospital/our-college/
+file:///D:/project_hospital/our-college/lib/
 2
